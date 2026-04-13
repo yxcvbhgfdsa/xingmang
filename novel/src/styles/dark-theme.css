@@ -1,0 +1,336 @@
+/* 暗色主题全局样式 */
+
+/* 通用背景色变量 */
+:root[data-theme='dark'] {
+  /* 主背景色 */
+  --bg-primary: #0d1424;
+  --bg-secondary: #111a2e;
+  --bg-tertiary: #1a2332;
+  
+  /* 卡片/容器背景 */
+  --card-bg: #1a2332;
+  --card-hover-bg: #232d3f;
+  
+  /* 文字颜色 */
+  --text-primary: #f4f7ff;
+  --text-secondary: #c8d0e0;
+  --text-tertiary: #8d99af;
+  --text-muted: #6b7280;
+  
+  /* 边框颜色 */
+  --border-primary: rgba(255, 255, 255, 0.08);
+  --border-secondary: rgba(255, 255, 255, 0.12);
+  
+  /* 阴影 */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+  
+  /* 主框架颜色 */
+  --app-background: #0d1424;
+  --app-color: #f4f7ff;
+  --topbar-background: rgba(10, 17, 31, 0.92);
+  --topbar-border: rgba(255, 255, 255, 0.08);
+  --sidebar-background: rgba(9, 14, 26, 0.94);
+  --sidebar-border: rgba(255, 255, 255, 0.08);
+  --content-background: rgba(17, 26, 46, 0.96);
+  --content-border: rgba(255, 255, 255, 0.08);
+  --menu-text: #8d99af;
+  --menu-hover: rgba(255, 255, 255, 0.06);
+  --menu-hover-color: #eff4ff;
+  
+  /* 页面特定背景 */
+  --prompts-container-bg: #1a2332;
+  --config-container-bg: #1a2332;
+  --experience-page-bg: #1a2332;
+  
+  /* 表格背景 */
+  --table-bg: #1a2332;
+  --table-header-bg: #232d3f;
+  --table-row-hover-bg: #2a3548;
+  --table-stripe-bg: #1f2a3d;
+  
+  /* 输入框/表单 */
+  --input-bg: #232d3f;
+  --input-border: rgba(255, 255, 255, 0.12);
+  --input-text: #f4f7ff;
+  --input-placeholder: #6b7280;
+  
+  /* 对话框/弹窗 */
+  --dialog-bg: #1a2332;
+  --dialog-header-bg: #1a2332;
+  --dialog-footer-bg: #1a2332;
+  
+  /* 下拉菜单 */
+  --dropdown-bg: #1a2332;
+  --dropdown-item-hover-bg: #232d3f;
+  
+  /* 标签页 */
+  --tabs-header-bg: #1a2332;
+  --tabs-content-bg: #1a2332;
+  
+  /* 空状态 */
+  --empty-bg: transparent;
+  
+  /* 按钮背景 */
+  --button-default-bg: #232d3f;
+  --button-default-text: #f4f7ff;
+  --button-default-border: rgba(255, 255, 255, 0.12);
+}
+
+/* 暗色主题下的页面样式覆盖 */
+:root[data-theme='dark'] .prompts-container {
+  background: var(--prompts-container-bg) !important;
+}
+
+:root[data-theme='dark'] .config-container {
+  background: var(--config-container-bg) !important;
+}
+
+:root[data-theme='dark'] .experience-page {
+  background: var(--experience-page-bg) !important;
+}
+
+/* 表格暗色主题 */
+:root[data-theme='dark'] .el-table {
+  background-color: var(--table-bg) !important;
+}
+
+:root[data-theme='dark'] .el-table th {
+  background-color: var(--table-header-bg) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-primary) !important;
+}
+
+:root[data-theme='dark'] .el-table td {
+  background-color: var(--table-bg) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-primary) !important;
+}
+
+:root[data-theme='dark'] .el-table--striped .el-table__row--striped td {
+  background-color: var(--table-stripe-bg) !important;
+}
+
+:root[data-theme='dark'] .el-table__row:hover td {
+  background-color: var(--table-row-hover-bg) !important;
+}
+
+/* 输入框暗色主题 */
+:root[data-theme='dark'] .el-input__wrapper {
+  background-color: var(--input-bg) !important;
+  border-color: var(--input-border) !important;
+}
+
+:root[data-theme='dark'] .el-input__inner {
+  color: var(--input-text) !important;
+}
+
+:root[data-theme='dark'] .el-input__inner::placeholder {
+  color: var(--input-placeholder) !important;
+}
+
+:root[data-theme='dark'] .el-textarea__inner {
+  background-color: var(--input-bg) !important;
+  border-color: var(--input-border) !important;
+  color: var(--input-text) !important;
+}
+
+:root[data-theme='dark'] .el-textarea__inner::placeholder {
+  color: var(--input-placeholder) !important;
+}
+
+/* 对话框暗色主题 */
+:root[data-theme='dark'] .el-dialog {
+  background-color: var(--dialog-bg) !important;
+}
+
+:root[data-theme='dark'] .el-dialog__header {
+  background-color: var(--dialog-header-bg) !important;
+  border-bottom-color: var(--border-primary) !important;
+}
+
+:root[data-theme='dark'] .el-dialog__title {
+  color: var(--text-primary) !important;
+}
+
+:root[data-theme='dark'] .el-dialog__body {
+  background-color: var(--dialog-bg) !important;
+  color: var(--text-primary) !important;
+}
+
+:root[data-theme='dark'] .el-dialog__footer {
+  background-color: var(--dialog-footer-bg) !important;
+  border-top-color: var(--border-primary) !important;
+}
+
+/* 下拉菜单暗色主题 */
+:root[data-theme='dark'] .el-dropdown-menu {
+  background-color: var(--dropdown-bg) !important;
+  border-color: var(--border-primary) !important;
+}
+
+:root[data-theme='dark'] .el-dropdown-menu__item {
+  color: var(--text-primary) !important;
+}
+
+:root[data-theme='dark'] .el-dropdown-menu__item:hover {
+  background-color: var(--dropdown-item-hover-bg) !important;
+}
+
+/* 标签页暗色主题 */
+:root[data-theme='dark'] .el-tabs--border-card {
+  background-color: var(--tabs-content-bg) !important;
+  border-color: var(--border-primary) !important;
+}
+
+:root[data-theme='dark'] .el-tabs__header {
+  background-color: var(--tabs-header-bg) !important;
+  border-bottom-color: var(--border-primary) !important;
+}
+
+:root[data-theme='dark'] .el-tabs__item {
+  color: var(--text-secondary) !important;
+}
+
+:root[data-theme='dark'] .el-tabs__item.is-active {
+  color: var(--text-primary) !important;
+  background-color: var(--card-bg) !important;
+}
+
+:root[data-theme='dark'] .el-tabs__content {
+  color: var(--text-primary) !important;
+}
+
+/* 卡片暗色主题 */
+:root[data-theme='dark'] .experience-card,
+:root[data-theme='dark'] .prompt-card {
+  background-color: var(--card-bg) !important;
+  border-color: var(--border-primary) !important;
+}
+
+:root[data-theme='dark'] .experience-card:hover,
+:root[data-theme='dark'] .prompt-card:hover {
+  background-color: var(--card-hover-bg) !important;
+}
+
+/* 概述卡片 */
+:root[data-theme='dark'] .overview-card {
+  background-color: var(--card-bg) !important;
+  border-color: var(--border-primary) !important;
+}
+
+:root[data-theme='dark'] .overview-label {
+  color: var(--text-secondary) !important;
+}
+
+:root[data-theme='dark'] .overview-value {
+  color: var(--text-primary) !important;
+}
+
+/* 头部区域 */
+:root[data-theme='dark'] .header h2,
+:root[data-theme='dark'] .page-header h2 {
+  color: var(--text-primary) !important;
+}
+
+:root[data-theme='dark'] .header-subtitle,
+:root[data-theme='dark'] .page-header p {
+  color: var(--text-secondary) !important;
+}
+
+/* 空状态 */
+:root[data-theme='dark'] .el-empty__description {
+  color: var(--text-secondary) !important;
+}
+
+/* 按钮默认样式调整 */
+:root[data-theme='dark'] .el-button--default {
+  background-color: var(--button-default-bg) !important;
+  border-color: var(--button-default-border) !important;
+  color: var(--button-default-text) !important;
+}
+
+:root[data-theme='dark'] .el-button--primary.is-disabled,
+:root[data-theme='dark'] .el-button--default.is-disabled {
+  background-color: #2a3548 !important;
+  border-color: transparent !important;
+  color: #6b7280 !important;
+}
+
+/* 分割线 */
+:root[data-theme='dark'] .el-divider {
+  background-color: var(--border-primary) !important;
+}
+
+/* 创意工坊页面 */
+:root[data-theme='dark'] .creative-workshop-container {
+  background: var(--content-background) !important;
+}
+
+:root[data-theme='dark'] .fixed-prompt-area {
+  background: var(--card-bg) !important;
+  border-color: var(--border-primary) !important;
+}
+
+:root[data-theme='dark'] .field-input-item label {
+  color: var(--text-secondary) !important;
+}
+
+:root[data-theme='dark'] .field-input-item .el-input__wrapper {
+  background: var(--input-bg) !important;
+  border-color: var(--input-border) !important;
+}
+
+:root[data-theme='dark'] .field-input-item .el-input__inner {
+  color: var(--input-text) !important;
+}
+
+/* 提示词预览页面 */
+:root[data-theme='dark'] .prompt-preview-page {
+  background: var(--content-background) !important;
+}
+
+/* 写作页面 */
+:root[data-theme='dark'] .write-container {
+  background: var(--content-background) !important;
+}
+
+:root[data-theme='dark'] .chapter-list {
+  background: var(--card-bg) !important;
+  border-color: var(--border-primary) !important;
+}
+
+/* 书籍管理页面 */
+:root[data-theme='dark'] .books-container {
+  background: var(--content-background) !important;
+}
+
+:root[data-theme='dark'] .book-card {
+  background: var(--card-bg) !important;
+  border-color: var(--border-primary) !important;
+}
+
+/* 个人中心页面 */
+:root[data-theme='dark'] .profile-container {
+  background: var(--content-background) !important;
+}
+
+/* 工作流页面 */
+:root[data-theme='dark'] .workflow-container {
+  background: var(--content-background) !important;
+}
+
+/* 滚动条暗色主题 */
+:root[data-theme='dark'] ::-webkit-scrollbar-track {
+  background: #1a2332;
+}
+
+:root[data-theme='dark'] ::-webkit-scrollbar-thumb {
+  background: #3a4558;
+  border-radius: 4px;
+}
+
+:root[data-theme='dark'] ::-webkit-scrollbar-thumb:hover {
+  background: #4a5568;
+}

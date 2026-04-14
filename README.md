@@ -47,10 +47,33 @@ npm run dev
 
 ## 🔧 技术栈
 
-- **前端**: Vue3 + Element Plus + TypeScript
-- **后端**: Node.js + Express
-- **数据库**: SQLite
-- **AI集成**: 支持OpenAI、Claude、通义千问等
+### 后端技术栈
+- 运行时 : Node.js
+- Web 框架 : Express.js (^4.18.2)
+- 数据库 : SQLite3 (^5.1.6)
+- HTTP 客户端 : Axios (^1.6.2)
+- 中间件 :
+  - CORS (^2.8.5)
+  - Body-parser (^1.20.2)
+### 前端技术栈 (novel 目录)
+- 核心框架 : Vue 3 (^3.5.22)
+- 构建工具 : Vite (^7.1.7)
+- UI 组件库 : Element Plus (^2.5.1)
+- 状态管理 : Pinia (^3.0.3)
+- 路由 : Vue Router (^4.5.1)
+- 样式 : SCSS (sass-embedded)
+- 类型系统 : TypeScript (~5.9.0)
+### 前端功能库
+- Markdown 渲染 : markdown-it (^14.0.0) + highlight.js (^11.9.0)
+- PDF 处理 : pdfjs-dist (^5.4.296)
+- 图标 : @element-plus/icons-vue (^2.3.1)
+### 项目特点
+这是一个 网文创作辅助系统 ，采用前后端分离架构：
+
+- 后端提供 RESTful API
+- 前端使用 Vue 3 + TypeScript 技术栈
+- 支持 Markdown 编辑、PDF 预览、AI 辅助创作等功能
+- 使用 SQLite 作为本地数据库
 
 ## 📝 常见问题
 
